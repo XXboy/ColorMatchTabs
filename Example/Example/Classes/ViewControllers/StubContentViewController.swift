@@ -10,11 +10,11 @@ import UIKit
 
 class StubContentViewController: UITableViewController {
     
-    enum `Type` {
+    enum ContentType {
         case products, venues, reviews, users
     }
     
-    var type: Type!
+    var type: ContentType!
     fileprivate var objects: [UIImage] = []
     
     override func viewDidLoad() {

@@ -17,7 +17,7 @@ import UIKit
 @objc public protocol ScrollMenuDataSource: class {
     
     func numberOfItemsInScrollMenu(_ scrollMenu: ScrollMenu) -> Int
-    func scrollMenu(_ scrollMenu: ScrollMenu, viewControllerAtIndex index: Int) -> UIViewController
+    func scrollMenu(_ scrollMenu: ScrollMenu, viewControllerAt index: Int) -> UIViewController
     
 }
 
@@ -105,7 +105,7 @@ open class ScrollMenu: UIScrollView {
         
         viewControllers = []
         for index in 0..<dataSource.numberOfItemsInScrollMenu(self) {
-            let viewController = dataSource.scrollMenu(self, viewControllerAtIndex: index)
+            let viewController = dataSource.scrollMenu(self, viewControllerAt: index)
             viewControllers.append(viewController)
             addSubview(viewController.view)
         }

@@ -21,7 +21,7 @@ public protocol ColorMatchTabsViewControllerDataSource: class {
 
 }
 
-open class ColorMatchTabsViewController: UITabBarController {
+open class ColorMatchTabsViewController: UIViewController {
     
     @IBInspectable open weak var dataSource: ColorMatchTabsViewControllerDataSource? {
         didSet {
