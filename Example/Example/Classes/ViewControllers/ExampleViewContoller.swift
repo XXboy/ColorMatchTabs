@@ -30,23 +30,23 @@ extension ExampleViewContoller: ColorMatchTabsViewControllerDataSource {
         return TabItemsProvider.items.count
     }
     
-    func tabsViewController(controller: ColorMatchTabsViewController, viewControllerAt index: Int) -> UIViewController {
+    func tabsViewController(_ controller: ColorMatchTabsViewController, viewControllerAt index: Int) -> UIViewController {
         return StubContentViewControllersProvider.viewControllers[index]
     }
     
-    func tabsViewController(controller: ColorMatchTabsViewController, titleAt index: Int) -> String {
+    func tabsViewController(_ controller: ColorMatchTabsViewController, titleAt index: Int) -> String {
         return TabItemsProvider.items[index].title
     }
     
-    func tabsViewController(controller: ColorMatchTabsViewController, iconAt index: Int) -> UIImage {
+    func tabsViewController(_ controller: ColorMatchTabsViewController, iconAt index: Int) -> UIImage {
         return TabItemsProvider.items[index].normalImage
     }
     
-    func tabsViewController(controller: ColorMatchTabsViewController, hightlightedIconAt index: Int) -> UIImage {
+    func tabsViewController(_ controller: ColorMatchTabsViewController, hightlightedIconAt index: Int) -> UIImage {
         return TabItemsProvider.items[index].highlightedImage
     }
     
-    func tabsViewController(controller: ColorMatchTabsViewController, tintColorAt index: Int) -> UIColor {
+    func tabsViewController(_ controller: ColorMatchTabsViewController, tintColorAt index: Int) -> UIColor {
         return TabItemsProvider.items[index].tintColor
     }
     
